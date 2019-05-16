@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1502班 曾剑浩 151110108"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/etId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="id...没有就先注册"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btLogin"
+        android:layout_alignLeft="@+id/etId"
+        android:layout_alignStart="@+id/etId"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="password...没有就先注册"
+        android:inputType="numberPassword" />
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/login" />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="新用户注册"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvFind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etPassword"
+        android:layout_alignStart="@+id/etPassword"
+        android:layout_below="@+id/tvRegister"
+        android:layout_marginTop="49dp"
+        android:text="找回密码" />
+
+    <TextView
+        android:id="@+id/tvFreeze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvFind"
+        android:layout_alignBottom="@+id/tvFind"
+        android:layout_toEndOf="@+id/btLogin"
+        android:layout_toRightOf="@+id/btLogin"
+        android:text="紧急冻结" />
+
+</RelativeLayout>

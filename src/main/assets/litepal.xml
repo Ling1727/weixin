@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="WeiXin"></dbname>
+    <version value="7"></version>
+    <list>
+        <mapping class="com.example.weixin.litepal.User"></mapping>
+        <mapping class="com.example.weixin.litepal.Meself"/>
+        <mapping class="com.example.weixin.litepal.Message"/>
+        <mapping class="com.example.weixin.litepal.Member"/>
+    </list>
+</litepal>
